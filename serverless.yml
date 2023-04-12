@@ -1,11 +1,9 @@
-
+service: lambda-layer
 provider:
   name: aws
   runtime: nodejs12.x
   stage: dev
-  region: us-east-1
-  profile : default
-
+  region: us-east-2
 layers:
   MomentLayer:
     path: java

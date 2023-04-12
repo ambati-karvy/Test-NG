@@ -6,5 +6,5 @@ provider:
   region: us-east-2
 layers:
   MomentLayer:
-    path: java
+    path: layerFiles
     description: "Moment Dependencies"

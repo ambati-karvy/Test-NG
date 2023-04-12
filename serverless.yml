@@ -1,1 +1,21 @@
 
+# serverless.yml
+service: b2b-billing-service
+frameworkVersion: ^2.28.3
+variablesResolutionMode: 20210326
+useDotenv: true
+
+# To preload environment variables into serverless
+plugins:
+  - serverless-dotenv-plugin
+
+#pick our language and provider, this is automatically filled in by the template
+provider:
+  name: aws
+  runtime: java11
+  region: us-east-2
+  stage : dev
+layers:
+  MomentLayer:
+    path: java.zip
+    description: "Moment Dependencies"

@@ -1,13 +1,6 @@
 
 # serverless.yml
 service: b2b-billing-service
-frameworkVersion: ^2.28.3
-variablesResolutionMode: 20210326
-useDotenv: true
-
-# To preload environment variables into serverless
-plugins:
-  - serverless-dotenv-plugin
 
 #pick our language and provider, this is automatically filled in by the template
 provider:

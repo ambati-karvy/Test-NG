@@ -1,14 +1,12 @@
 
-# serverless.yml
-service: b2b-billing-service
-
-#pick our language and provider, this is automatically filled in by the template
 provider:
   name: aws
-  runtime: java11
-  region: us-east-2
-  stage : dev
+  runtime: nodejs12.x
+  stage: dev
+  region: us-east-1
+  profile : default
+
 layers:
   MomentLayer:
-    path: java.zip
+    path: java
     description: "Moment Dependencies"
